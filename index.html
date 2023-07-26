@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cravings Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Libre+Baskerville:wght@400;700&family=Libre+Bodoni&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bae9f52734.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- The body has 4 sections-header ,services, deal,footer -->
+
+    <!-- Header /landing page -->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/coffee.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">PREMIUM</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h3 class="h-primary">Welcome to TheRichTaste</h1>
+                <p>Indulge in our wide range of coffee blends and shop our exclusive products to enjoy the cup of coffee.<br>Free Shipping on orders above 999!</p>
+                <a href="" class="hero-btn"> Order Now</a>
+        </div>
+    </section>
+
+    <!-- our services -->
+    <section class="services">
+        <h2>Services We Offer</h1>
+        <p>Happy to make your day Brew-tiful!</p>
+
+        <div class="row">
+            <div class="service-col">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Dine In</h3>
+                <p>We serve our delights in our cafe with utmost care and hygiene.We try to provide you with a pleasant ambience so that you can enjoy with family ,
+                    friends,colleague or even solo! We also arrange small gatherings for special occasions only on prior booking.<br>See you soon!!</p>
+                <button type="button">Book your table</button>    
+            </div>
+            <div class="service-col">
+                <i class="fa-solid fa-box"></i>
+                <h3 >Take Away</h3>
+                <p>We provide online take-away services from 6am to 6pm for beverages and 6am to 10pm for food items.You fav coffee (hot/cold)is packed with care in our special containers to let you sip the best.We have service upto 6km radius from the outlet.<br>Check out our Menu to know more !!
+                </p>
+                <button type="button">Place order</button>
+            </div>
+            <div class="service-col">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3 >Delivery and Merchandise</h3>
+                <p>We bring to you our premium quality merchandise shipping PAN India.We have for you customised mugs/gift sets,wide range of unique coffee blends and machineries at very affordable price.Have a look at our Product section to know more about them.Contact us for more details</p>
+                     <button type="button">Have a look</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deal of the day -->
+    <section>
+        <div class="contain">
+            <div class="rows">
+                <div class="cols">
+                    <h1>Deal of the day</h1>
+                    <p>Weekend is here!! Pack of 12 cupcakes for just 499/- !! </p>
+                    <button type="button">Open Menu</button>
+                </div>
+                <div class="cols grid-display">
+                    <div class="card card1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Footer -->
+    <section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Order status</a></li>
+                            <li><a href="#">Payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Career</h4>
+                        <ul>
+                            <li><a href="#">In Kitchen</a></li>
+                            <li><a href="#">Designer</a></li>
+                            <li><a href="#">Delivery and service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+    </section>
+
+    <!-- A small javascript function for the responsive navbar in header -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

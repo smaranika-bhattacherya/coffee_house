@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Header */
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,38,0.7),rgba(4,9,30,0.7)),url(images/bg2.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+nav{
+    display:flex;
+    padding:10px 30px 10px 20px;
+    justify-content: space-between;
+    align-items:center;
+}
+/* nav img is the logo */
+nav img{
+    width: 60px;
+    float:left;
+    padding-left: 60px;
+    padding-top: 5px;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding-top:30px;
+    position:relative;
+}
+.nav-links li a{
+    color:rgb(247, 243, 243);
+    text-decoration:none;
+    padding:5px 10px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-links li a:hover{
+    background:rgb(221, 210, 210);
+    color:rgb(66, 18, 18);
+    
+}
+/* Text in the landing page */
+.text-box{
+    width:90%;
+    color:rgb(240, 230, 230);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+.text-box h3{
+    
+    font-size: 60px;
+    font-family: 'Libre Baskerville', serif;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 17px;
+    color:rgb(240, 230, 230);
+    font-family: 'Libre Baskerville', serif
+}
+/* button under the text */
+.hero-btn{     
+    text-decoration: none;
+    display: inline-block;
+    color:white; 
+    border: 1px solid white;
+    cursor:pointer;
+    padding: 6px 20px;
+    background-color:transparent;
+    font-size:1.2rem;
+    position:relative;
+}
+.hero-btn:hover{
+    background: rgb(221, 210, 210);
+    color:rgb(66, 18, 18) ;
+    transition:0.55s;
+}
+/* The icons in the responsive navbar */
+nav .fas{
+    display:none;
+}
+
+/* Media query to make the webpage responsive */
+@media(max-width:800px){
+    .text-box h3{
+        font-size:30px
+    }
+    .text-box p{
+        font-size: 12px;       
+    }
+    nav img{
+        width: 50px;
+        padding-left: 30px;
+     }
+     .nav-links ul li{
+         display:block
+     }
+     .nav-links ul li a{
+        color:rgb(66, 18, 18)
+     }
+     .nav-links{
+         position:absolute;
+         background:#eee2e2;
+         height:100vh;
+         width:200px;
+         top:0;
+         right:0;
+         text-align:left;
+         z-index:2;
+         
+     }
+     .nav-links ul{
+         padding:30px
+     }
+     nav .fas{
+         display: block;
+         color:rgb(66, 18, 18);
+         font-size:22px;
+         cursor:pointer;
+         padding:10px
+         
+     }
+     nav .fas.fa-bars{
+         color:white
+     }
+     
+}
+/* sercices */
+.services{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:40px
+}
+h2{
+    font-size:36px;
+    font-weight:600;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px 0;
+}
+p{
+    color:#777;
+    font-size:14px;
+    font-weight: 300;
+    line-height:22px;
+    padding:10px
+}
+.row{
+    margin-top:5%;
+    display:flex;
+    justify-content: space-between;
+}
+.service-col{
+    flex-basis:31%;
+    background: #eee2e2;
+    border-radius:10px;
+    margin-bottom: 5%;
+    padding:20px 12px;
+    box-sizing:border-box;
+    transition:0.5s;
+}
+.service-col:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/* Make the service section cards responsive */
+@media(max-width:800px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* The deal of the day section */
+.contain{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(images/R.png);
+    background-position: center;
+    background-size:cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.rows{
+    display:flex;
+    height:88%;
+    align-items:center
+}
+.cols{
+    flex-basis: 50%;
+}
+.cols h1{
+    color:white;
+    font-size: 60px;
+}
+.cols p{
+    color:white;
+    font-size:18px
+}
+button{
+    width:100px;
+    color:#000;
+    font-size:12px;
+    padding:12px 0;
+    background:#fff;
+    border:0;
+    border-radius:20px;
+    outline:none;
+    margin-top:30px;
+}
+button:hover{
+    background:rgb(74, 36, 36) ;
+    color:white;
+}
+.card{
+    width: 500px;
+    height: 330px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: contain;
+    transition: 0.5s;
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+.card1{
+    background-image: url(images/cupcake.jpg);
+    background-size: contain;
+}
+
+/* footer */
+.footer.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.footer.container.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-col ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 10px ;
+    margin: 2px 0 0 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 800px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .rows{
+        display: inline-block;
+        align-items: center;
+    }
+    .card{
+        width: 250px;
+        height: 165px;
+    }
+}
